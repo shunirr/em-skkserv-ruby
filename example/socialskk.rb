@@ -19,5 +19,5 @@ class SocialSKK < EM::SKKServ::Server
 end
 
 EM.run do
-  EM.start_server "127.0.0.1", 8081, SocialSKK
+  EM.start_server "127.0.0.1", 1178, SocialSKK
 end

@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = EventMachine::SKKServ::VERSION
   spec.authors       = ["shunirr"]
   spec.email         = ["m@s5r.jp"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
+  spec.description   = %q{EventMachine based SKKServ}
+  spec.summary       = %q{EventMachine based SKKServ}
   spec.homepage      = "https://github.com/shunirr/em-skkserv-ruby"
   spec.license       = "MIT"
 
