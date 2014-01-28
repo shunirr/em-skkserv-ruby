@@ -24,7 +24,7 @@ require 'em-skkserv'
 class YuiSKK < EM::SKKServ::Server
   def on_request(kana)
     if kana == 'ゆい'
-      send_data EM::SKKServ::ServerMessage.new :found, :kanji => ['唯']
+      send_data EM::SKKServ::ServerMessage.new :found, :kanji => ['ゆい(*-v・)ゆい']
     else
       send_data EM::SKKServ::ServerMessage.new :not_found
     end
