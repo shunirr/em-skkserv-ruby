@@ -12,6 +12,14 @@ module EventMachine
         close_connection_after_writing
       end
 
+      def found(kanji, encoding = 'UTF-8')
+        send_data ServerMessage.new(:found, :kanji => kanji, :encoding => encoding).to_s
+      end
+
+      def not_found
+        send_data ServerMessage.new(:not_found).to_s
+      end
+
       def on_close
       end
 

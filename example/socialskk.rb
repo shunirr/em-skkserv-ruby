@@ -11,9 +11,9 @@ class SocialSKK < EM::SKKServ::Server
     data = open("http://www.social-ime.com/api/?string=#{URI.escape(kana)}").read
     kanji = data.split "\t"
     if kanji.size > 0
-      send_data EM::SKKServ::ServerMessage.new :found, :kanji => kanji, :encoding => 'EUC-JP'
+      found kanji, 'EUC-JP'
     else
-      send_data EM::SKKServ::ServerMessage.new :not_found
+      not_found
     end
   end
 end
