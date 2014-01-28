@@ -36,6 +36,8 @@ EM.run do
 end
 ```
 
+![](http://gyazo.com/348598abb3518dfdea39bba45d225fac.gif)
+
 ## Contributing
 
 1. Fork it
